@@ -12,7 +12,7 @@
   "plugins": [
     {
       "name": "agent-orchestration",
-      "source": "jobtailor-plugin/plugins/agent-orchestration",
+      "source": "./plugins/agent-orchestration",
       "description": "Multi-agent system optimization, agent improvement workflows, and context management.",
       "version": "1.2.0",
       "author": {
@@ -47,14 +47,14 @@
       "category": "ai-ml",
       "strict": false,
       "commands": [
-        "jobtailor-plugin/plugins/agent-orchestration/commands/improve-agent.md",
-        "jobtailor-plugin/plugins/agent-orchestration/commands/multi-agent-optimize.md"
+        "./commands/improve-agent.md",
+        "./commands/multi-agent-optimize.md"
       ],
-      "agents": ["jobtailor-plugin/plugins/agent-orchestration/agents/context-manager.md"]
+      "agents": ["./agents/context-manager.md"]
     },
     {
       "name": "api-scaffolding",
-      "source": "jobtailor-plugin/plugins/api-scaffolding",
+      "source": "./plugins/api-scaffolding",
       "description": "REST and GraphQL API scaffolding, framework selection, backend architecture, and API generation.",
       "version": "1.2.1",
       "author": {
@@ -70,18 +70,18 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "jobtailor-plugin/plugins/api-scaffolding/agents/backend-architect.md",
-        "jobtailor-plugin/plugins/api-scaffolding/agents/backend-security-coder.md",
-        "jobtailor-plugin/plugins/api-scaffolding/agents/django-pro.md",
-        "jobtailor-plugin/plugins/api-scaffolding/agents/fastapi-pro.md",
-        "jobtailor-plugin/plugins/api-scaffolding/agents/graphql-architect.md",
-        "jobtailor-plugin/plugins/api-scaffolding/agents/python-pro.md"
+        "./agents/backend-architect.md",
+        "./agents/backend-security-coder.md",
+        "./agents/django-pro.md",
+        "./agents/fastapi-pro.md",
+        "./agents/graphql-architect.md",
+        "./agents/python-pro.md"
       ],
-      "skills": ["jobtailor-plugin/plugins/api-scaffolding/skills/fastapi-templates"]
+      "skills": ["./skills/fastapi-templates"]
     },
     {
       "name": "application-performance",
-      "source": "jobtailor-plugin/plugins/application-performance",
+      "source": "./plugins/application-performance",
       "description": "Application profiling, performance optimization, and observability for frontend and backend systems.",
       "version": "1.2.1",
       "author": {
@@ -96,18 +96,18 @@
       "category": "performance",
       "strict": false,
       "commands": [
-        "jobtailor-plugin/plugins/application-performance/commands/performance-optimization.md"
+        "./commands/performance-optimization.md"
       ],
       "agents": [
-        "jobtailor-plugin/plugins/application-performance/agents/frontend-developer.md",
-        "jobtailor-plugin/plugins/application-performance/agents/observability-engineer.md",
-        "jobtailor-plugin/plugins/application-performance/agents/performance-engineer.md"
+        "./agents/frontend-developer.md",
+        "./agents/observability-engineer.md",
+        "./agents/performance-engineer.md"
       ],
       "skills": []
     },
     {
       "name": "backend-development",
-      "source": "jobtailor-plugin/plugins/backend-development",
+      "source": "./plugins/backend-development",
       "description": "Backend API design, GraphQL architecture, and test-driven backend development.",
       "version": "1.2.2",
       "author": {
@@ -121,25 +121,23 @@
       "tags": ["backend", "api-design", "graphql", "tdd", "architecture", "python"],
       "category": "development",
       "strict": false,
-      "commands": [
-        "jobtailor-plugin/plugins/backend-development/commands/feature-development.md"
-      ],
+      "commands": ["./commands/feature-development.md"],
       "agents": [
-        "jobtailor-plugin/plugins/backend-development/agents/backend-architect.md",
-        "jobtailor-plugin/plugins/backend-development/agents/backend-security-coder.md",
-        "jobtailor-plugin/plugins/backend-development/agents/graphql-architect.md",
-        "jobtailor-plugin/plugins/backend-development/agents/python-pro.md",
-        "jobtailor-plugin/plugins/backend-development/agents/tdd-orchestrator.md"
+        "./agents/backend-architect.md",
+        "./agents/backend-security-coder.md",
+        "./agents/graphql-architect.md",
+        "./agents/python-pro.md",
+        "./agents/tdd-orchestrator.md"
       ],
       "skills": [
-        "jobtailor-plugin/plugins/backend-development/skills/api-design-principles",
-        "jobtailor-plugin/plugins/backend-development/skills/architecture-patterns",
-        "jobtailor-plugin/plugins/backend-development/skills/microservices-patterns"
+        "./skills/api-design-principles",
+        "./skills/architecture-patterns",
+        "./skills/microservices-patterns"
       ]
     },
     {
       "name": "react-pdf-templates",
-      "source": "jobtailor-plugin/plugins/react-pdf-templates",
+      "source": "./plugins/react-pdf-templates",
       "description": "Code style and development patterns skill for professional PDF document generation using @react-pdf/renderer.",
       "version": "1.2.2",
       "author": {
@@ -154,22 +152,22 @@
       "category": "utility",
       "strict": false,
       "commands": [
-        "jobtailor-plugin/plugins/react-pdf-templates/commands/generate-pdf.md",
-        "jobtailor-plugin/plugins/react-pdf-templates/commands/tailor-help.md",
-        "jobtailor-plugin/plugins/react-pdf-templates/commands/tailor.md"
+        "./commands/generate-pdf.md",
+        "./commands/tailor-help.md",
+        "./commands/tailor.md"
       ],
 
       "agents": [
-        "jobtailor-plugin/plugins/react-pdf-templates/agents/job-analysis.md",
-        "jobtailor-plugin/plugins/react-pdf-templates/agents/job-tailor.md",
-        "jobtailor-plugin/plugins/react-pdf-templates/agents/rpdf-template-expert.md",
-        "jobtailor-plugin/plugins/react-pdf-templates/agents/tailor-generate-assets.md"
+        "./agents/job-analysis.md",
+        "./agents/job-tailor.md",
+        "./agents/rpdf-template-expert.md",
+        "./agents/tailor-generate-assets.md"
       ],
-      "skills": ["jobtailor-plugin/plugins/react-pdf-templates/skills/react-pdf-templates"]
+      "skills": ["./skills/react-pdf-templates"]
     },
     {
       "name": "brainstorming",
-      "source": "jobtailor-plugin/plugins/brainstorming",
+      "source": "./plugins/brainstorming",
       "description": "Plugin for creating or developing, before writing code or implementation plans.",
       "version": "1.2.2",
       "author": {
@@ -183,13 +181,13 @@
       "tags": ["brainstorming", "ideation", "planning", "design", "strategy", "brainstorm"],
       "category": "metacognitive",
       "strict": false,
-      "commands": ["jobtailor-plugin/plugins/brainstorming/commands/brainstorm.md"],
-      "agents": ["jobtailor-plugin/plugins/brainstorming/agents/brainstorming-PRD.md"],
-      "skills": ["jobtailor-plugin/plugins/brainstorming/skills/brainstorming"]
+      "commands": ["./commands/brainstorm.md"],
+      "agents": ["./agents/brainstorming-PRD.md"],
+      "skills": ["./skills/brainstorming"]
     },
     {
       "name": "code-review",
-      "source": "jobtailor-plugin/plugins/code-review",
+      "source": "./plugins/code-review",
       "description": "Plugin for creating or developing, before writing code or implementation plans.",
       "version": "1.2.2",
       "author": {
@@ -204,15 +202,15 @@
       "category": "development",
       "strict": false,
       "commands": [""],
-      "agents": ["jobtailor-plugin/plugins/code-review/agents/code-reviewer.md"],
+      "agents": ["./agents/code-reviewer.md"],
       "skills": [
-        "jobtailor-plugin/plugins/code-review/skills/receiving-code-review",
-        "jobtailor-plugin/plugins/code-review/skills/requesting-code-review"
+        "./skills/receiving-code-review",
+        "./skills/requesting-code-review"
       ]
     },
     {
       "name": "llm-application-dev",
-      "source": "jobtailor-plugin/plugins/llm-application-dev",
+      "source": "./plugins/llm-application-dev",
       "description": "LLM application development, prompt engineering, and AI assistant optimization",
       "version": "1.2.1",
       "author": {
@@ -227,25 +225,25 @@
       "category": "ai-ml",
       "strict": false,
       "commands": [
-        "jobtailor-plugin/plugins/llm-application-dev/commands/ai-assistant.md",
-        "jobtailor-plugin/plugins/llm-application-dev/commands/langchain-agent.md",
-        "jobtailor-plugin/plugins/llm-application-dev/commands/prompt-optimize.md"
+        "./commands/ai-assistant.md",
+        "./commands/langchain-agent.md",
+        "./commands/prompt-optimize.md"
       ],
       "agents": [
-        "jobtailor-plugin/plugins/llm-application-dev/agents/ai-engineer.md",
-        "jobtailor-plugin/plugins/llm-application-dev/agents/prompt-engineer.md"
+        "./agents/ai-engineer.md",
+        "./agents/prompt-engineer.md"
       ],
       "skills": [
-        "jobtailor-plugin/plugins/llm-application-dev/skills/langchain-architecture",
-        "jobtailor-plugin/plugins/llm-application-dev/skills/llm-evaluation",
-        "jobtailor-plugin/plugins/llm-application-dev/skills/prompt-engineering-patterns",
-        "jobtailor-plugin/plugins/llm-application-dev/skills/verification-before-completion",
-        "jobtailor-plugin/plugins/llm-application-dev/skills/rag-implementation"
+        "./skills/langchain-architecture",
+        "./skills/llm-evaluation",
+        "./skills/prompt-engineering-patterns",
+        "./skills/verification-before-completion",
+        "./skills/rag-implementation"
       ]
     },
     {
       "name": "python-development",
-      "source": "jobtailor-plugin/plugins/python-development",
+      "source": "./plugins/python-development",
       "description": "Modern Python development with Python 3.12+, Django, FastAPI, async patterns, and production best practices",
       "version": "1.2.1",
       "author": {
@@ -259,33 +257,31 @@
       "tags": ["python", "django", "fastapi", "async", "backend"],
       "category": "languages",
       "strict": false,
-      "commands": [
-        "jobtailor-plugin/plugins/python-development/commands/python-scaffold.md"
-      ],
+      "commands": ["./commands/python-scaffold.md"],
       "agents": [
-        "jobtailor-plugin/plugins/python-development/agents/django-pro.md",
-        "jobtailor-plugin/plugins/python-development/agents/fastapi-pro.md",
-        "jobtailor-plugin/plugins/python-development/agents/python-pro.md"
+        "./agents/django-pro.md",
+        "./agents/fastapi-pro.md",
+        "./agents/python-pro.md"
       ],
       "skills": [
-        "jobtailor-plugin/plugins/python-development/skills/async-python-patterns",
-        "jobtailor-plugin/plugins/python-development/skills/async-python-patterns/SKILL.md",
-        "jobtailor-plugin/plugins/python-development/skills/auth-implementation-patterns",
-        "jobtailor-plugin/plugins/python-development/skills/debugging-strategies",
-        "jobtailor-plugin/plugins/python-development/skills/defense-in-depth",
-        "jobtailor-plugin/plugins/python-development/skills/e2e-testing-patterns",
-        "jobtailor-plugin/plugins/python-development/skills/error-handling-patterns",
-        "jobtailor-plugin/plugins/python-development/skills/python-packaging",
-        "jobtailor-plugin/plugins/python-development/skills/python-performance-optimization",
-        "jobtailor-plugin/plugins/python-development/skills/python-testing-pattern",
-        "jobtailor-plugin/plugins/python-development/skills/root-cause-tracing",
-        "jobtailor-plugin/plugins/python-development/skills/testing-anti-patterns",
-        "jobtailor-plugin/plugins/python-development/skills/verification-before-completion"
+        "./skills/async-python-patterns",
+        "./skills/async-python-patterns/SKILL.md",
+        "./skills/auth-implementation-patterns",
+        "./skills/debugging-strategies",
+        "./skills/defense-in-depth",
+        "./skills/e2e-testing-patterns",
+        "./skills/error-handling-patterns",
+        "./skills/python-packaging",
+        "./skills/python-performance-optimization",
+        "./skills/python-testing-pattern",
+        "./skills/root-cause-tracing",
+        "./skills/testing-anti-patterns",
+        "./skills/verification-before-completion"
       ]
     },
     {
       "name": "javascript-typescript",
-      "source": "jobtailor-plugin/plugins/javascript-typescript",
+      "source": "./plugins/javascript-typescript",
       "description": "JavaScript and TypeScript development with ES6+, Node.js, React, and modern web frameworks",
       "version": "1.2.1",
       "author": {
@@ -299,22 +295,22 @@
       "category": "languages",
       "strict": false,
       "commands": [
-        "jobtailor-plugin/plugins/javascript-typescript/commands/typescript-scaffold.md"
+        "./commands/typescript-scaffold.md"
       ],
       "agents": [
-        "jobtailor-plugin/plugins/javascript-typescript/agents/javascript-pro.md",
-        "jobtailor-plugin/plugins/javascript-typescript/agents/typescript-pro.md"
+        "./agents/javascript-pro.md",
+        "./agents/typescript-pro.md"
       ],
       "skills": [
-        "jobtailor-plugin/plugins/javascript-typescript/skills/javascript-testing-patterns",
-        "jobtailor-plugin/plugins/javascript-typescript/skills/modern-javascript-patterns",
-        "jobtailor-plugin/plugins/javascript-typescript/skills/nodejs-backend-patterns",
-        "jobtailor-plugin/plugins/javascript-typescript/skills/typescript-advanced-types"
+        "./skills/javascript-testing-patterns",
+        "./skills/modern-javascript-patterns",
+        "./skills/nodejs-backend-patterns",
+        "./skills/typescript-advanced-types"
       ]
     },
     {
       "name": "shell-scripting",
-      "source": "jobtailor-plugin/plugins/shell-scripting",
+      "source": "./plugins/shell-scripting",
       "description": "Production-grade Bash scripting with defensive programming, POSIX compliance, and comprehensive testing",
       "version": "1.2.1",
       "author": {
@@ -330,18 +326,18 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "jobtailor-plugin/plugins/shell-scripting/agents/bash-pro.md",
-        "jobtailor-plugin/plugins/shell-scripting/agents/posix-shell-pro.md"
+        "./agents/bash-pro.md",
+        "./agents/posix-shell-pro.md"
       ],
       "skills": [
-        "jobtailor-plugin/plugins/shell-scripting/skills/bash-defensive-patterns/SKILL.md",
-        "jobtailor-plugin/plugins/shell-scripting/skills/shellcheck-configuration/SKILL.md",
-        "jobtailor-plugin/plugins/shell-scripting/skills/bats-testing-patterns/SKILL.md"
+        "./skills/bash-defensive-patterns/SKILL.md",
+        "./skills/shellcheck-configuration/SKILL.md",
+        "./skills/bats-testing-patterns/SKILL.md"
       ]
     },
     {
       "name": "machine-learning-ops",
-      "source": "jobtailor-plugin/plugins/machine-learning-ops",
+      "source": "./plugins/machine-learning-ops",
       "description": "ML model training pipelines, hyperparameter tuning, model deployment automation, experiment tracking, and MLOps workflows",
       "version": "1.2.1",
       "author": {
@@ -373,25 +369,25 @@
       ],
       "category": "ai-ml",
       "strict": false,
-      "commands": ["jobtailor-plugin/plugins/machine-learning-ops/commands/ml-pipeline.md"],
+      "commands": ["./commands/ml-pipeline.md"],
       "agents": [
-        "jobtailor-plugin/plugins/machine-learning-ops/agents/data-scientist.md",
-        "jobtailor-plugin/plugins/machine-learning-ops/agents/ml-engineer.md",
-        "jobtailor-plugin/plugins/machine-learning-ops/agents/mlops-engineer.md"
+        "./agents/data-scientist.md",
+        "./agents/ml-engineer.md",
+        "./agents/mlops-engineer.md"
       ],
       "skills": [
-        "jobtailor-plugin/plugins/machine-learning-ops/skills/debugging-strategies",
-        "jobtailor-plugin/plugins/machine-learning-ops/skills/defense-in-depth",
-        "jobtailor-plugin/plugins/machine-learning-ops/skills/e2e-testing-patterns",
-        "jobtailor-plugin/plugins/machine-learning-ops/skills/error-handling-patterns",
-        "jobtailor-plugin/plugins/machine-learning-ops/skills/ml-pipeline-workflow",
-        "jobtailor-plugin/plugins/machine-learning-ops/skills/root-cause-tracing",
-        "jobtailor-plugin/plugins/machine-learning-ops/skills/verification-before-completion"
+        "./skills/debugging-strategies",
+        "./skills/defense-in-depth",
+        "./skills/e2e-testing-patterns",
+        "./skills/error-handling-patterns",
+        "./skills/ml-pipeline-workflow",
+        "./skills/root-cause-tracing",
+        "./skills/verification-before-completion"
       ]
     },
     {
       "name": "developer-engineer-essential",
-      "source": "jobtailor-plugin/plugins/developer-engineer-essential",
+      "source": "./plugins/developer-engineer-essential",
       "description": "Essential developer skills including Git workflows, SQL optimization, error handling, code review, E2E testing, authentication, debugging, and monorepo management",
       "version": "1.0.0",
       "author": {
@@ -430,16 +426,16 @@
       "commands": [],
       "agents": [],
       "skills": [
-        "jobtailor-plugin/plugins/developer-engineer-essential/skills/verification-before-completion",
-        "jobtailor-plugin/plugins/developer-engineer-essential/skills/root-cause-tracing",
-        "jobtailor-plugin/plugins/developer-engineer-essential/skills/monorepo-management",
-        "jobtailor-plugin/plugins/developer-engineer-essential/skills/error-handling-patterns",
-        "jobtailor-plugin/plugins/developer-engineer-essential/skills/e2e-testing-patterns",
-        "jobtailor-plugin/plugins/developer-engineer-essential/skills/defense-in-depth",
-        "jobtailor-plugin/plugins/developer-engineer-essential/skills/debugging-strategies",
-        "jobtailor-plugin/plugins/developer-engineer-essential/skills/condition-based-waiting",
-        "jobtailor-plugin/plugins/developer-engineer-essential/skills/code-review-excellence",
-        "jobtailor-plugin/plugins/developer-engineer-essential/skills/auth-implementation-patterns"
+        "./skills/verification-before-completion",
+        "./skills/root-cause-tracing",
+        "./skills/monorepo-management",
+        "./skills/error-handling-patterns",
+        "./skills/e2e-testing-patterns",
+        "./skills/defense-in-depth",
+        "./skills/debugging-strategies",
+        "./skills/condition-based-waiting",
+        "./skills/code-review-excellence",
+        "./skills/auth-implementation-patterns"
       ]
     }
   ]
