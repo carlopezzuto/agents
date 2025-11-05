@@ -2,8 +2,8 @@
   "name": "jobtailor-plugin",
   "owner": {
     "name": "Carlo",
-    "email": "",
-    "url": ""
+    "email": "exemple@gh.com",
+    "url": "https://github.com/carlopezzuto"
   },
   "metadata": {
     "description": "JobTailor Plugin",
@@ -19,8 +19,8 @@
         "name": "Seth Hobson",
         "url": "https://github.com/wshobson"
       },
-      "homepage": "https://github.com/wshobson/agents",
-      "repository": "https://github.com/wshobson/agents",
+      "homepage": "https://github.com/carlopezzuto/agents",
+      "repository": "https://github.com/carlopezzuto/agents",
       "license": "MIT",
       "keywords": [
         "multi-agent",
@@ -61,8 +61,8 @@
         "name": "Seth Hobson",
         "url": "https://github.com/wshobson"
       },
-      "homepage": "https://github.com/wshobson/agents",
-      "repository": "https://github.com/wshobson/agents",
+      "homepage": "https://github.com/carlopezzuto/agents",
+      "repository": "https://github.com/carlopezzuto/agents",
       "license": "MIT",
       "keywords": ["api", "rest", "graphql", "fastapi", "django", "express"],
       "tags": ["api", "rest", "graphql", "fastapi", "django", "express"],
@@ -88,8 +88,8 @@
         "name": "Seth Hobson",
         "url": "https://github.com/wshobson"
       },
-      "homepage": "https://github.com/wshobson/agents",
-      "repository": "https://github.com/wshobson/agents",
+      "homepage": "https://github.com/carlopezzuto/agents",
+      "repository": "https://github.com/carlopezzuto/agents",
       "license": "MIT",
       "keywords": ["performance", "profiling", "optimization", "core-web-vitals"],
       "tags": ["performance", "profiling", "optimization", "core-web-vitals"],
@@ -114,8 +114,8 @@
         "name": "Seth Hobson",
         "url": "https://github.com/wshobson"
       },
-      "homepage": "https://github.com/wshobson/agents",
-      "repository": "https://github.com/wshobson/agents",
+      "homepage": "https://github.com/carlopezzuto/agents",
+      "repository": "https://github.com/carlopezzuto/agents",
       "license": "MIT",
       "keywords": ["backend", "api-design", "graphql", "tdd", "architecture", "python"],
       "tags": ["backend", "api-design", "graphql", "tdd", "architecture", "python"],
@@ -141,11 +141,11 @@
       "description": "Code style and development patterns skill for professional PDF document generation using @react-pdf/renderer.",
       "version": "1.2.2",
       "author": {
-        "name": "",
-        "url": ""
+        "name": "Carlo",
+        "url": "https://github.com/carlopezzuto"
       },
-      "homepage": "",
-      "repository": "",
+      "homepage": "https://github.com/carlopezzuto/agents",
+      "repository": "https://github.com/carlopezzuto/agents",
       "license": "MIT",
       "keywords": ["PDF Templates", "React PDF", "Document Generation"],
       "tags": ["PDF Templates", "React PDF", "Document Generation"],
@@ -171,11 +171,11 @@
       "description": "Plugin for creating or developing, before writing code or implementation plans.",
       "version": "1.2.2",
       "author": {
-        "name": "",
-        "url": ""
+        "name": "Carlo",
+        "url": "https://github.com/carlopezzuto"
       },
-      "homepage": "",
-      "repository": "",
+      "homepage": "https://github.com/carlopezzuto/agents",
+      "repository": "https://github.com/carlopezzuto/agents",
       "license": "MIT",
       "keywords": ["brainstorming", "ideation", "planning", "design", "strategy", "brainstorm"],
       "tags": ["brainstorming", "ideation", "planning", "design", "strategy", "brainstorm"],
@@ -191,11 +191,11 @@
       "description": "Plugin for creating or developing, before writing code or implementation plans.",
       "version": "1.2.2",
       "author": {
-        "name": "",
-        "url": ""
+        "name": "Carlo",
+        "url": "https://github.com/carlopezzuto"
       },
-      "homepage": "",
-      "repository": "",
+      "homepage": "https://github.com/carlopezzuto/agents",
+      "repository": "https://github.com/carlopezzuto/agents",
       "license": "MIT",
       "keywords": ["code review", "feedback", "collaboration", "development", "quality assurance"],
       "tags": ["code review", "feedback", "collaboration", "development", "quality assurance"],
@@ -217,8 +217,8 @@
         "name": "Seth Hobson",
         "url": "https://github.com/wshobson"
       },
-      "homepage": "https://github.com/wshobson/agents",
-      "repository": "https://github.com/wshobson/agents",
+      "homepage": "https://github.com/carlopezzuto/agents",
+      "repository": "https://github.com/carlopezzuto/agents",
       "license": "MIT",
       "keywords": ["llm", "ai", "prompt-engineering", "langchain", "gpt", "claude"],
       "tags": ["llm", "ai", "prompt-engineering", "langchain", "gpt", "claude"],
@@ -250,8 +250,8 @@
         "name": "Seth Hobson",
         "url": "https://github.com/wshobson"
       },
-      "homepage": "https://github.com/wshobson/agents",
-      "repository": "https://github.com/wshobson/agents",
+      "homepage": "https://github.com/carlopezzuto/agents",
+      "repository": "https://github.com/carlopezzuto/agents",
       "license": "MIT",
       "keywords": ["python", "django", "fastapi", "async", "backend"],
       "tags": ["python", "django", "fastapi", "async", "backend"],
@@ -288,8 +288,8 @@
         "name": "Seth Hobson",
         "url": "https://github.com/wshobson"
       },
-      "homepage": "https://github.com/wshobson/agents",
-      "repository": "https://github.com/wshobson/agents",
+      "homepage": "https://github.com/carlopezzuto/agents",
+      "repository": "https://github.com/carlopezzuto/agents",
       "license": "MIT",
       "keywords": ["javascript", "typescript", "es6", "nodejs", "react"],
       "category": "languages",
@@ -317,8 +317,8 @@
         "name": "Ryan Snodgrass",
         "url": "https://github.com/rsnodgrass"
       },
-      "homepage": "https://github.com/wshobson/agents",
-      "repository": "https://github.com/wshobson/agents",
+      "homepage": "https://github.com/carlopezzuto/agents",
+      "repository": "https://github.com/carlopezzuto/agents",
       "license": "MIT",
       "keywords": ["bash", "shell", "scripting", "automation", "posix", "shellcheck", "testing"],
       "tags": ["bash", "shell", "scripting", "automation", "posix", "shellcheck", "testing"],
@@ -344,8 +344,8 @@
         "name": "Seth Hobson",
         "url": "https://github.com/wshobson"
       },
-      "homepage": "https://github.com/wshobson/agents",
-      "repository": "https://github.com/wshobson/agents",
+      "homepage": "https://github.com/carlopezzuto/agents",
+      "repository": "https://github.com/carlopezzuto/agents",
       "license": "MIT",
       "keywords": [
         "machine-learning",
@@ -394,8 +394,8 @@
         "name": "Seth Hobson",
         "url": "https://github.com/wshobson"
       },
-      "homepage": "https://github.com/wshobson/agents",
-      "repository": "https://github.com/wshobson/agents",
+      "homepage": "https://github.com/carlopezzuto/agents",
+      "repository": "https://github.com/carlopezzuto/agents",
       "license": "MIT",
       "keywords": [
         "git",
