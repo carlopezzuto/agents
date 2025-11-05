@@ -1,0 +1,446 @@
+{
+  "name": "jobtailor-plugin",
+  "owner": {
+    "name": "Carlo",
+    "email": "",
+    "url": ""
+  },
+  "metadata": {
+    "description": "JobTailor Plugin",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "agent-orchestration",
+      "source": "jobtailor-plugin/plugins/agent-orchestration",
+      "description": "Multi-agent system optimization, agent improvement workflows, and context management.",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "url": "https://github.com/wshobson"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "repository": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "keywords": [
+        "multi-agent",
+        "multiagent",
+        "multi-agents",
+        "multiagents",
+        "orchestration",
+        "agent workflows",
+        "ai-agents",
+        "optimization",
+        "delegation"
+      ],
+      "tags": [
+        "multi-agent",
+        "multiagent",
+        "multi-agents",
+        "multiagents",
+        "orchestration",
+        "agent workflows",
+        "ai-agents",
+        "optimization",
+        "delegation"
+      ],
+      "category": "ai-ml",
+      "strict": false,
+      "commands": [
+        "jobtailor-plugin/plugins/agent-orchestration/commands/improve-agent.md",
+        "jobtailor-plugin/plugins/agent-orchestration/commands/multi-agent-optimize.md"
+      ],
+      "agents": ["jobtailor-plugin/plugins/agent-orchestration/agents/context-manager.md"]
+    },
+    {
+      "name": "api-scaffolding",
+      "source": "jobtailor-plugin/plugins/api-scaffolding",
+      "description": "REST and GraphQL API scaffolding, framework selection, backend architecture, and API generation.",
+      "version": "1.2.1",
+      "author": {
+        "name": "Seth Hobson",
+        "url": "https://github.com/wshobson"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "repository": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "keywords": ["api", "rest", "graphql", "fastapi", "django", "express"],
+      "tags": ["api", "rest", "graphql", "fastapi", "django", "express"],
+      "category": "api",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "jobtailor-plugin/plugins/api-scaffolding/agents/backend-architect.md",
+        "jobtailor-plugin/plugins/api-scaffolding/agents/backend-security-coder.md",
+        "jobtailor-plugin/plugins/api-scaffolding/agents/django-pro.md",
+        "jobtailor-plugin/plugins/api-scaffolding/agents/fastapi-pro.md",
+        "jobtailor-plugin/plugins/api-scaffolding/agents/graphql-architect.md",
+        "jobtailor-plugin/plugins/api-scaffolding/agents/python-pro.md"
+      ],
+      "skills": ["jobtailor-plugin/plugins/api-scaffolding/skills/fastapi-templates"]
+    },
+    {
+      "name": "application-performance",
+      "source": "jobtailor-plugin/plugins/application-performance",
+      "description": "Application profiling, performance optimization, and observability for frontend and backend systems.",
+      "version": "1.2.1",
+      "author": {
+        "name": "Seth Hobson",
+        "url": "https://github.com/wshobson"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "repository": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "keywords": ["performance", "profiling", "optimization", "core-web-vitals"],
+      "tags": ["performance", "profiling", "optimization", "core-web-vitals"],
+      "category": "performance",
+      "strict": false,
+      "commands": [
+        "jobtailor-plugin/plugins/application-performance/commands/performance-optimization.md"
+      ],
+      "agents": [
+        "jobtailor-plugin/plugins/application-performance/agents/frontend-developer.md",
+        "jobtailor-plugin/plugins/application-performance/agents/observability-engineer.md",
+        "jobtailor-plugin/plugins/application-performance/agents/performance-engineer.md"
+      ],
+      "skills": []
+    },
+    {
+      "name": "backend-development",
+      "source": "jobtailor-plugin/plugins/backend-development",
+      "description": "Backend API design, GraphQL architecture, and test-driven backend development.",
+      "version": "1.2.2",
+      "author": {
+        "name": "Seth Hobson",
+        "url": "https://github.com/wshobson"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "repository": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "keywords": ["backend", "api-design", "graphql", "tdd", "architecture", "python"],
+      "tags": ["backend", "api-design", "graphql", "tdd", "architecture", "python"],
+      "category": "development",
+      "strict": false,
+      "commands": [
+        "jobtailor-plugin/plugins/backend-development/commands/feature-development.md"
+      ],
+      "agents": [
+        "jobtailor-plugin/plugins/backend-development/agents/backend-architect.md",
+        "jobtailor-plugin/plugins/backend-development/agents/backend-security-coder.md",
+        "jobtailor-plugin/plugins/backend-development/agents/graphql-architect.md",
+        "jobtailor-plugin/plugins/backend-development/agents/python-pro.md",
+        "jobtailor-plugin/plugins/backend-development/agents/tdd-orchestrator.md"
+      ],
+      "skills": [
+        "jobtailor-plugin/plugins/backend-development/skills/api-design-principles",
+        "jobtailor-plugin/plugins/backend-development/skills/architecture-patterns",
+        "jobtailor-plugin/plugins/backend-development/skills/microservices-patterns"
+      ]
+    },
+    {
+      "name": "react-pdf-templates",
+      "source": "jobtailor-plugin/plugins/react-pdf-templates",
+      "description": "Code style and development patterns skill for professional PDF document generation using @react-pdf/renderer.",
+      "version": "1.2.2",
+      "author": {
+        "name": "",
+        "url": ""
+      },
+      "homepage": "",
+      "repository": "",
+      "license": "MIT",
+      "keywords": ["PDF Templates", "React PDF", "Document Generation"],
+      "tags": ["PDF Templates", "React PDF", "Document Generation"],
+      "category": "utility",
+      "strict": false,
+      "commands": [
+        "jobtailor-plugin/plugins/react-pdf-templates/commands/generate-pdf.md",
+        "jobtailor-plugin/plugins/react-pdf-templates/commands/tailor-help.md",
+        "jobtailor-plugin/plugins/react-pdf-templates/commands/tailor.md"
+      ],
+
+      "agents": [
+        "jobtailor-plugin/plugins/react-pdf-templates/agents/job-analysis.md",
+        "jobtailor-plugin/plugins/react-pdf-templates/agents/job-tailor.md",
+        "jobtailor-plugin/plugins/react-pdf-templates/agents/rpdf-template-expert.md",
+        "jobtailor-plugin/plugins/react-pdf-templates/agents/tailor-generate-assets.md"
+      ],
+      "skills": ["jobtailor-plugin/plugins/react-pdf-templates/skills/react-pdf-templates"]
+    },
+    {
+      "name": "brainstorming",
+      "source": "jobtailor-plugin/plugins/brainstorming",
+      "description": "Plugin for creating or developing, before writing code or implementation plans.",
+      "version": "1.2.2",
+      "author": {
+        "name": "",
+        "url": ""
+      },
+      "homepage": "",
+      "repository": "",
+      "license": "MIT",
+      "keywords": ["brainstorming", "ideation", "planning", "design", "strategy", "brainstorm"],
+      "tags": ["brainstorming", "ideation", "planning", "design", "strategy", "brainstorm"],
+      "category": "metacognitive",
+      "strict": false,
+      "commands": ["jobtailor-plugin/plugins/brainstorming/commands/brainstorm.md"],
+      "agents": ["jobtailor-plugin/plugins/brainstorming/agents/brainstorming-PRD.md"],
+      "skills": ["jobtailor-plugin/plugins/brainstorming/skills/brainstorming"]
+    },
+    {
+      "name": "code-review",
+      "source": "jobtailor-plugin/plugins/code-review",
+      "description": "Plugin for creating or developing, before writing code or implementation plans.",
+      "version": "1.2.2",
+      "author": {
+        "name": "",
+        "url": ""
+      },
+      "homepage": "",
+      "repository": "",
+      "license": "MIT",
+      "keywords": ["code review", "feedback", "collaboration", "development", "quality assurance"],
+      "tags": ["code review", "feedback", "collaboration", "development", "quality assurance"],
+      "category": "development",
+      "strict": false,
+      "commands": [""],
+      "agents": ["jobtailor-plugin/plugins/code-review/agents/code-reviewer.md"],
+      "skills": [
+        "jobtailor-plugin/plugins/code-review/skills/receiving-code-review",
+        "jobtailor-plugin/plugins/code-review/skills/requesting-code-review"
+      ]
+    },
+    {
+      "name": "llm-application-dev",
+      "source": "jobtailor-plugin/plugins/llm-application-dev",
+      "description": "LLM application development, prompt engineering, and AI assistant optimization",
+      "version": "1.2.1",
+      "author": {
+        "name": "Seth Hobson",
+        "url": "https://github.com/wshobson"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "repository": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "keywords": ["llm", "ai", "prompt-engineering", "langchain", "gpt", "claude"],
+      "tags": ["llm", "ai", "prompt-engineering", "langchain", "gpt", "claude"],
+      "category": "ai-ml",
+      "strict": false,
+      "commands": [
+        "jobtailor-plugin/plugins/llm-application-dev/commands/ai-assistant.md",
+        "jobtailor-plugin/plugins/llm-application-dev/commands/langchain-agent.md",
+        "jobtailor-plugin/plugins/llm-application-dev/commands/prompt-optimize.md"
+      ],
+      "agents": [
+        "jobtailor-plugin/plugins/llm-application-dev/agents/ai-engineer.md",
+        "jobtailor-plugin/plugins/llm-application-dev/agents/prompt-engineer.md"
+      ],
+      "skills": [
+        "jobtailor-plugin/plugins/llm-application-dev/skills/langchain-architecture",
+        "jobtailor-plugin/plugins/llm-application-dev/skills/llm-evaluation",
+        "jobtailor-plugin/plugins/llm-application-dev/skills/prompt-engineering-patterns",
+        "jobtailor-plugin/plugins/llm-application-dev/skills/verification-before-completion",
+        "jobtailor-plugin/plugins/llm-application-dev/skills/rag-implementation"
+      ]
+    },
+    {
+      "name": "python-development",
+      "source": "jobtailor-plugin/plugins/python-development",
+      "description": "Modern Python development with Python 3.12+, Django, FastAPI, async patterns, and production best practices",
+      "version": "1.2.1",
+      "author": {
+        "name": "Seth Hobson",
+        "url": "https://github.com/wshobson"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "repository": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "keywords": ["python", "django", "fastapi", "async", "backend"],
+      "tags": ["python", "django", "fastapi", "async", "backend"],
+      "category": "languages",
+      "strict": false,
+      "commands": [
+        "jobtailor-plugin/plugins/python-development/commands/python-scaffold.md"
+      ],
+      "agents": [
+        "jobtailor-plugin/plugins/python-development/agents/django-pro.md",
+        "jobtailor-plugin/plugins/python-development/agents/fastapi-pro.md",
+        "jobtailor-plugin/plugins/python-development/agents/python-pro.md"
+      ],
+      "skills": [
+        "jobtailor-plugin/plugins/python-development/skills/async-python-patterns",
+        "jobtailor-plugin/plugins/python-development/skills/async-python-patterns/SKILL.md",
+        "jobtailor-plugin/plugins/python-development/skills/auth-implementation-patterns",
+        "jobtailor-plugin/plugins/python-development/skills/debugging-strategies",
+        "jobtailor-plugin/plugins/python-development/skills/defense-in-depth",
+        "jobtailor-plugin/plugins/python-development/skills/e2e-testing-patterns",
+        "jobtailor-plugin/plugins/python-development/skills/error-handling-patterns",
+        "jobtailor-plugin/plugins/python-development/skills/python-packaging",
+        "jobtailor-plugin/plugins/python-development/skills/python-performance-optimization",
+        "jobtailor-plugin/plugins/python-development/skills/python-testing-pattern",
+        "jobtailor-plugin/plugins/python-development/skills/root-cause-tracing",
+        "jobtailor-plugin/plugins/python-development/skills/testing-anti-patterns",
+        "jobtailor-plugin/plugins/python-development/skills/verification-before-completion"
+      ]
+    },
+    {
+      "name": "javascript-typescript",
+      "source": "jobtailor-plugin/plugins/javascript-typescript",
+      "description": "JavaScript and TypeScript development with ES6+, Node.js, React, and modern web frameworks",
+      "version": "1.2.1",
+      "author": {
+        "name": "Seth Hobson",
+        "url": "https://github.com/wshobson"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "repository": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "keywords": ["javascript", "typescript", "es6", "nodejs", "react"],
+      "category": "languages",
+      "strict": false,
+      "commands": [
+        "jobtailor-plugin/plugins/javascript-typescript/commands/typescript-scaffold.md"
+      ],
+      "agents": [
+        "jobtailor-plugin/plugins/javascript-typescript/agents/javascript-pro.md",
+        "jobtailor-plugin/plugins/javascript-typescript/agents/typescript-pro.md"
+      ],
+      "skills": [
+        "jobtailor-plugin/plugins/javascript-typescript/skills/javascript-testing-patterns",
+        "jobtailor-plugin/plugins/javascript-typescript/skills/modern-javascript-patterns",
+        "jobtailor-plugin/plugins/javascript-typescript/skills/nodejs-backend-patterns",
+        "jobtailor-plugin/plugins/javascript-typescript/skills/typescript-advanced-types"
+      ]
+    },
+    {
+      "name": "shell-scripting",
+      "source": "jobtailor-plugin/plugins/shell-scripting",
+      "description": "Production-grade Bash scripting with defensive programming, POSIX compliance, and comprehensive testing",
+      "version": "1.2.1",
+      "author": {
+        "name": "Ryan Snodgrass",
+        "url": "https://github.com/rsnodgrass"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "repository": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "keywords": ["bash", "shell", "scripting", "automation", "posix", "shellcheck", "testing"],
+      "tags": ["bash", "shell", "scripting", "automation", "posix", "shellcheck", "testing"],
+      "category": "languages",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "jobtailor-plugin/plugins/shell-scripting/agents/bash-pro.md",
+        "jobtailor-plugin/plugins/shell-scripting/agents/posix-shell-pro.md"
+      ],
+      "skills": [
+        "jobtailor-plugin/plugins/shell-scripting/skills/bash-defensive-patterns/SKILL.md",
+        "jobtailor-plugin/plugins/shell-scripting/skills/shellcheck-configuration/SKILL.md",
+        "jobtailor-plugin/plugins/shell-scripting/skills/bats-testing-patterns/SKILL.md"
+      ]
+    },
+    {
+      "name": "machine-learning-ops",
+      "source": "jobtailor-plugin/plugins/machine-learning-ops",
+      "description": "ML model training pipelines, hyperparameter tuning, model deployment automation, experiment tracking, and MLOps workflows",
+      "version": "1.2.1",
+      "author": {
+        "name": "Seth Hobson",
+        "url": "https://github.com/wshobson"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "repository": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "keywords": [
+        "machine-learning",
+        "mlops",
+        "model-training",
+        "tensorflow",
+        "pytorch",
+        "mlflow",
+        "hyperparameter-tuning",
+        "huggingface"
+      ],
+      "tags": [
+        "machine-learning",
+        "mlops",
+        "model-training",
+        "tensorflow",
+        "pytorch",
+        "mlflow",
+        "hyperparameter-tuning",
+        "huggingface"
+      ],
+      "category": "ai-ml",
+      "strict": false,
+      "commands": ["jobtailor-plugin/plugins/machine-learning-ops/commands/ml-pipeline.md"],
+      "agents": [
+        "jobtailor-plugin/plugins/machine-learning-ops/agents/data-scientist.md",
+        "jobtailor-plugin/plugins/machine-learning-ops/agents/ml-engineer.md",
+        "jobtailor-plugin/plugins/machine-learning-ops/agents/mlops-engineer.md"
+      ],
+      "skills": [
+        "jobtailor-plugin/plugins/machine-learning-ops/skills/debugging-strategies",
+        "jobtailor-plugin/plugins/machine-learning-ops/skills/defense-in-depth",
+        "jobtailor-plugin/plugins/machine-learning-ops/skills/e2e-testing-patterns",
+        "jobtailor-plugin/plugins/machine-learning-ops/skills/error-handling-patterns",
+        "jobtailor-plugin/plugins/machine-learning-ops/skills/ml-pipeline-workflow",
+        "jobtailor-plugin/plugins/machine-learning-ops/skills/root-cause-tracing",
+        "jobtailor-plugin/plugins/machine-learning-ops/skills/verification-before-completion"
+      ]
+    },
+    {
+      "name": "developer-engineer-essential",
+      "source": "jobtailor-plugin/plugins/developer-engineer-essential",
+      "description": "Essential developer skills including Git workflows, SQL optimization, error handling, code review, E2E testing, authentication, debugging, and monorepo management",
+      "version": "1.0.0",
+      "author": {
+        "name": "Seth Hobson",
+        "url": "https://github.com/wshobson"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "repository": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "keywords": [
+        "git",
+        "sql",
+        "debugging",
+        "testing",
+        "authentication",
+        "code-review",
+        "monorepo",
+        "essential",
+        "review",
+        "ending tasks"
+      ],
+      "tags": [
+        "git",
+        "sql",
+        "debugging",
+        "testing",
+        "authentication",
+        "code-review",
+        "monorepo",
+        "essential",
+        "review",
+        "ending tasks"
+      ],
+      "category": "development",
+      "strict": false,
+      "commands": [],
+      "agents": [],
+      "skills": [
+        "jobtailor-plugin/plugins/developer-engineer-essential/skills/verification-before-completion",
+        "jobtailor-plugin/plugins/developer-engineer-essential/skills/root-cause-tracing",
+        "jobtailor-plugin/plugins/developer-engineer-essential/skills/monorepo-management",
+        "jobtailor-plugin/plugins/developer-engineer-essential/skills/error-handling-patterns",
+        "jobtailor-plugin/plugins/developer-engineer-essential/skills/e2e-testing-patterns",
+        "jobtailor-plugin/plugins/developer-engineer-essential/skills/defense-in-depth",
+        "jobtailor-plugin/plugins/developer-engineer-essential/skills/debugging-strategies",
+        "jobtailor-plugin/plugins/developer-engineer-essential/skills/condition-based-waiting",
+        "jobtailor-plugin/plugins/developer-engineer-essential/skills/code-review-excellence",
+        "jobtailor-plugin/plugins/developer-engineer-essential/skills/auth-implementation-patterns"
+      ]
+    }
+  ]
+}
