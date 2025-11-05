@@ -201,7 +201,7 @@
       "tags": ["code review", "feedback", "collaboration", "development", "quality assurance"],
       "category": "development",
       "strict": false,
-      "commands": [""],
+      "commands": [],
       "agents": ["./agents/code-reviewer.md"],
       "skills": [
         "./skills/receiving-code-review",
