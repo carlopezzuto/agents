@@ -373,7 +373,7 @@
       "agents": [
         "./agents/data-scientist.md",
         "./agents/ml-engineer.md",
-        "./agents/mlops-engineer.md"
+        "./agents/ml-ops-engineer.md"
       ],
       "skills": [
         "./skills/debugging-strategies",
