@@ -134,7 +134,11 @@
       "agents": [
         "./agents/docs-architect.md",
         "./agents/tutorial-engineer.md",
-        "./agents/code-reviewer.md"
+        "./agents/code-reviewer.md",
+        "./agents/api-documenter.md",
+        "./agents/mermaid-expert.md",
+        "./agents/tutorial-engineer.md",
+        "./agents/reference-builder.md"
       ],
       "skills": []
     },
@@ -282,6 +286,34 @@
         "./agents/code-reviewer.md"
       ],
       "skills": []
+    },
+    {
+      "name": "context-management",
+      "source": "./plugins/context-management",
+      "description": "Context persistence, restoration, and long-running conversation management",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "url": "https://github.com/wshobson"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "repository": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "keywords": [
+        "context",
+        "persistence",
+        "conversation",
+        "memory"
+      ],
+      "category": "ai-ml",
+      "strict": false,
+      "commands": [
+        "./commands/context-save.md",
+        "./commands/context-restore.md"
+      ],
+      "agents": [
+        "./agents/context-manager.md"
+      ]
     },
     {
       "name": "react-pdf-templates",
