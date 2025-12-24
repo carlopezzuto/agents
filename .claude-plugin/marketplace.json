@@ -112,7 +112,7 @@
       "version": "1.2.1",
       "author": {
         "name": "Seth Hobson",
-        "url": "https://github.com/wshobson"
+        "url": "https://github.com/carlopezzuto"
       },
       "homepage": "https://github.com/carlopezzuto/agents",
       "repository": "https://github.com/carlopezzuto/agents",
@@ -233,7 +233,7 @@
       "version": "1.2.2",
       "author": {
         "name": "Seth Hobson",
-        "url": "https://github.com/wshobson"
+        "url": "https://github.com/carlopezzuto"
       },
       "homepage": "https://github.com/carlopezzuto/agents",
       "repository": "https://github.com/carlopezzuto/agents",
@@ -242,18 +242,39 @@
       "tags": ["backend", "api-design", "graphql", "tdd", "architecture", "python"],
       "category": "development",
       "strict": false,
-      "commands": ["./commands/feature-development.md"],
+      "commands": [
+        "./commands/feature-development.md",
+        "./commands/tdd-cycle.md"
+      ],
       "agents": [
         "./agents/backend-architect.md",
         "./agents/backend-security-coder.md",
         "./agents/graphql-architect.md",
         "./agents/python-pro.md",
-        "./agents/tdd-orchestrator.md"
+        "./agents/tdd-orchestrator.md",
+	      "./agents/test-automator.md",
+        "./agents/ml-engineer.md",
+        "./agents/ml-ops-engineer.md",
+        "./agents/fastapi-pro.md",
+        "./agents/data-scientist.md",
+        "./agents/debugger.md",
+        "./agents/architect-review.md"
       ],
       "skills": [
         "./skills/api-design-principles",
         "./skills/architecture-patterns",
-        "./skills/microservices-patterns"
+        "./skills/microservices-patterns",
+        "./skills/auth-implementation-patterns",
+        "./skills/debugging-strategies",
+        "./skills/defense-in-depth",
+        "./skills/e2e-testing-patterns",
+        "./skills/error-handling-patterns",
+        "./skills/python-packaging",
+        "./skills/python-performance-optimization",
+        "./skills/python-testing-pattern",
+        "./skills/root-cause-tracing",
+        "./skills/testing-anti-patterns",
+        "./skills/verification-before-completion"
       ]
     },
     {
