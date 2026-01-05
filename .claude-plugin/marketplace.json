@@ -7,7 +7,7 @@
   },
   "metadata": {
     "description": "JobTailor Plugin",
-    "version": "0.1.0"
+    "version": "0.1.7"
   },
   "plugins": [
     {
@@ -17,7 +17,7 @@
       "version": "1.2.0",
       "author": {
         "name": "Seth Hobson",
-        "url": "https://github.com/wshobson"
+        "url": "https://github.com/carlopezzuto"
       },
       "homepage": "https://github.com/carlopezzuto/agents",
       "repository": "https://github.com/carlopezzuto/agents",
@@ -59,7 +59,7 @@
       "version": "1.2.1",
       "author": {
         "name": "Seth Hobson",
-        "url": "https://github.com/wshobson"
+        "url": "https://github.com/carlopezzuto"
       },
       "homepage": "https://github.com/carlopezzuto/agents",
       "repository": "https://github.com/carlopezzuto/agents",
@@ -122,7 +122,7 @@
       "version": "1.2.1",
       "author": {
         "name": "Seth Hobson",
-        "url": "https://github.com/wshobson"
+        "url": "https://github.com/carlopezzuto"
       },
       "homepage": "https://github.com/carlopezzuto/agents",
       "repository": "https://github.com/carlopezzuto/agents",
@@ -161,7 +161,7 @@
       "version": "1.2.1",
       "author": {
         "name": "Seth Hobson",
-        "url": "https://github.com/wshobson"
+        "url": "https://github.com/carlopezzuto"
       },
       "homepage": "https://github.com/carlopezzuto/agents",
       "repository": "https://github.com/carlopezzuto/agents",
@@ -269,7 +269,7 @@
       "version": "1.2.2",
       "author": {
         "name": "Seth Hobson",
-        "url": "https://github.com/wshobson"
+        "url": "https://github.com/carlopezzuto"
       },
       "homepage": "https://github.com/carlopezzuto/agents",
       "repository": "https://github.com/carlopezzuto/agents",
@@ -301,10 +301,10 @@
       "version": "1.2.0",
       "author": {
         "name": "Seth Hobson",
-        "url": "https://github.com/wshobson"
+        "url": "https://github.com/carlopezzuto"
       },
-      "homepage": "https://github.com/wshobson/agents",
-      "repository": "https://github.com/wshobson/agents",
+      "homepage": "https://github.com/carlopezzuto/agents",
+      "repository": "https://github.com/carlopezzuto/agents",
       "license": "MIT",
       "keywords": [
         "context",
@@ -402,7 +402,7 @@
       "version": "1.2.1",
       "author": {
         "name": "Seth Hobson",
-        "url": "https://github.com/wshobson"
+        "url": "https://github.com/carlopezzuto"
       },
       "homepage": "https://github.com/carlopezzuto/agents",
       "repository": "https://github.com/carlopezzuto/agents",
@@ -435,7 +435,7 @@
       "version": "1.2.1",
       "author": {
         "name": "Seth Hobson",
-        "url": "https://github.com/wshobson"
+        "url": "https://github.com/carlopezzuto"
       },
       "homepage": "https://github.com/carlopezzuto/agents",
       "repository": "https://github.com/carlopezzuto/agents",
@@ -491,7 +491,7 @@
       "version": "1.2.1",
       "author": {
         "name": "Seth Hobson",
-        "url": "https://github.com/wshobson"
+        "url": "https://github.com/carlopezzuto"
       },
       "homepage": "https://github.com/carlopezzuto/agents",
       "repository": "https://github.com/carlopezzuto/agents",
