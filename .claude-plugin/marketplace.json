@@ -53,33 +53,6 @@
       "agents": ["./agents/context-manager.md"]
     },
     {
-      "name": "api-scaffolding",
-      "source": "./plugins/api-scaffolding",
-      "description": "REST and GraphQL API scaffolding, framework selection, backend architecture, and API generation.",
-      "version": "1.2.1",
-      "author": {
-        "name": "Seth Hobson",
-        "url": "https://github.com/wshobson"
-      },
-      "homepage": "https://github.com/carlopezzuto/agents",
-      "repository": "https://github.com/carlopezzuto/agents",
-      "license": "MIT",
-      "keywords": ["api", "rest", "graphql", "fastapi", "django", "express"],
-      "tags": ["api", "rest", "graphql", "fastapi", "django", "express"],
-      "category": "api",
-      "strict": false,
-      "commands": [],
-      "agents": [
-        "./agents/backend-architect.md",
-        "./agents/backend-security-coder.md",
-        "./agents/django-pro.md",
-        "./agents/fastapi-pro.md",
-        "./agents/graphql-architect.md",
-        "./agents/python-pro.md"
-      ],
-      "skills": ["./skills/fastapi-templates"]
-    },
-    {
       "name": "application-performance",
       "source": "./plugins/application-performance",
       "description": "Application profiling, performance optimization, and observability for frontend and backend systems.",
@@ -221,10 +194,12 @@
         "./agents/database-optimizer.md",
         "./agents/network-engineer.md"
       ],
-      "skills": ["./skills/distributed-tracing",
+      "skills": [
+        "./skills/distributed-tracing",
         "./skills/grafana-dashboards",
         "./skills/prometheus-configuration",
-        "./skills/slo-implementation"]
+        "./skills/slo-implementation"
+      ]
     },
     {
       "name": "backend-development",
@@ -244,12 +219,17 @@
       "strict": false,
       "commands": [
         "./commands/feature-development.md",
-        "./commands/tdd-cycle.md"
+        "./commands/tdd-cycle.md",
+        "./commands/smart-debug.md",
+        "./commands/python-scaffold.md"
       ],
       "agents": [
         "./agents/backend-architect.md",
         "./agents/backend-security-coder.md",
         "./agents/graphql-architect.md",
+        "./agents/django-pro.md",
+        "./agents/code-reviewer.md",
+        "./agents/fastapi-pro.md",
         "./agents/python-pro.md",
         "./agents/tdd-orchestrator.md",
 	      "./agents/test-automator.md",
@@ -263,12 +243,17 @@
       "skills": [
         "./skills/api-design-principles",
         "./skills/architecture-patterns",
+        "./skills/async-python-patterns",
+        "./skills/code-review-excellence",
+        "./skills/condition-based-waiting",
         "./skills/microservices-patterns",
+        "./skills/monorepo-management",
         "./skills/auth-implementation-patterns",
         "./skills/debugging-strategies",
         "./skills/defense-in-depth",
         "./skills/e2e-testing-patterns",
         "./skills/error-handling-patterns",
+        "./skills/fastapi-templates",
         "./skills/python-packaging",
         "./skills/python-performance-optimization",
         "./skills/python-testing-pattern",
@@ -299,7 +284,8 @@
         "dependencies"],
       "category": "modernization",
       "strict": false,
-      "commands": ["./commands/deps-audit.md",
+      "commands": [
+        "./commands/deps-audit.md",
         "./commands/tech-debt.md",
         "./commands/refactor-clean.md"],
       "agents": [
@@ -443,44 +429,6 @@
       ]
     },
     {
-      "name": "python-development",
-      "source": "./plugins/python-development",
-      "description": "Modern Python development with Python 3.12+, Django, FastAPI, async patterns, and production best practices",
-      "version": "1.2.1",
-      "author": {
-        "name": "Seth Hobson",
-        "url": "https://github.com/wshobson"
-      },
-      "homepage": "https://github.com/carlopezzuto/agents",
-      "repository": "https://github.com/carlopezzuto/agents",
-      "license": "MIT",
-      "keywords": ["python", "django", "fastapi", "async", "backend"],
-      "tags": ["python", "django", "fastapi", "async", "backend"],
-      "category": "languages",
-      "strict": false,
-      "commands": ["./commands/python-scaffold.md"],
-      "agents": [
-        "./agents/django-pro.md",
-        "./agents/fastapi-pro.md",
-        "./agents/python-pro.md"
-      ],
-      "skills": [
-        "./skills/async-python-patterns",
-        "./skills/async-python-patterns/SKILL.md",
-        "./skills/auth-implementation-patterns",
-        "./skills/debugging-strategies",
-        "./skills/defense-in-depth",
-        "./skills/e2e-testing-patterns",
-        "./skills/error-handling-patterns",
-        "./skills/python-packaging",
-        "./skills/python-performance-optimization",
-        "./skills/python-testing-pattern",
-        "./skills/root-cause-tracing",
-        "./skills/testing-anti-patterns",
-        "./skills/verification-before-completion"
-      ]
-    },
-    {
       "name": "javascript-typescript",
       "source": "./plugins/javascript-typescript",
       "description": "JavaScript and TypeScript development with ES6+, Node.js, React, and modern web frameworks",
@@ -584,59 +532,6 @@
         "./skills/ml-pipeline-workflow",
         "./skills/root-cause-tracing",
         "./skills/verification-before-completion"
-      ]
-    },
-    {
-      "name": "developer-engineer-essential",
-      "source": "./plugins/developer-engineer-essential",
-      "description": "Essential developer skills including Git workflows, SQL optimization, error handling, code review, E2E testing, authentication, debugging, and monorepo management",
-      "version": "1.0.0",
-      "author": {
-        "name": "Seth Hobson",
-        "url": "https://github.com/wshobson"
-      },
-      "homepage": "https://github.com/carlopezzuto/agents",
-      "repository": "https://github.com/carlopezzuto/agents",
-      "license": "MIT",
-      "keywords": [
-        "git",
-        "sql",
-        "debugging",
-        "testing",
-        "authentication",
-        "code-review",
-        "monorepo",
-        "essential",
-        "review",
-        "ending tasks"
-      ],
-      "tags": [
-        "git",
-        "sql",
-        "debugging",
-        "testing",
-        "authentication",
-        "code-review",
-        "monorepo",
-        "essential",
-        "review",
-        "ending tasks"
-      ],
-      "category": "development",
-      "strict": false,
-      "commands": [],
-      "agents": [],
-      "skills": [
-        "./skills/verification-before-completion",
-        "./skills/root-cause-tracing",
-        "./skills/monorepo-management",
-        "./skills/error-handling-patterns",
-        "./skills/e2e-testing-patterns",
-        "./skills/defense-in-depth",
-        "./skills/debugging-strategies",
-        "./skills/condition-based-waiting",
-        "./skills/code-review-excellence",
-        "./skills/auth-implementation-patterns"
       ]
     }
   ]
