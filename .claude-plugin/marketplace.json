@@ -7,14 +7,14 @@
   },
   "metadata": {
     "description": "JobTailor Plugin",
-    "version": "0.1.7"
+    "version": "0.1.8"
   },
   "plugins": [
     {
       "name": "agent-orchestration",
       "source": "./plugins/agent-orchestration",
       "description": "Multi-agent system optimization, agent improvement workflows, and context management.",
-      "version": "1.2.0",
+      "version": "1.2.2",
       "author": {
         "name": "Seth Hobson",
         "url": "https://github.com/carlopezzuto"
@@ -56,7 +56,7 @@
       "name": "application-performance",
       "source": "./plugins/application-performance",
       "description": "Application profiling, performance optimization, and observability for frontend and backend systems.",
-      "version": "1.2.1",
+      "version": "1.2.2",
       "author": {
         "name": "Seth Hobson",
         "url": "https://github.com/carlopezzuto"
@@ -82,7 +82,7 @@
       "name": "code-documentation",
       "source": "./plugins/code-documentation",
       "description": "Documentation generation, code explanation, and technical writing with automated doc generation and tutorial creation",
-      "version": "1.2.1",
+      "version": "1.2.2",
       "author": {
         "name": "Seth Hobson",
         "url": "https://github.com/carlopezzuto"
@@ -119,7 +119,7 @@
       "name": "cicd-automation",
       "source": "./plugins/cicd-automation",
       "description": "CI/CD pipeline configuration, GitHub Actions/GitLab CI workflow setup, and automated deployment pipeline orchestration",
-      "version": "1.2.1",
+      "version": "1.2.2",
       "author": {
         "name": "Seth Hobson",
         "url": "https://github.com/carlopezzuto"
@@ -158,7 +158,7 @@
       "name": "observability-monitoring",
       "source": "./plugins/observability-monitoring",
       "description": "Metrics collection, logging infrastructure, distributed tracing, SLO implementation, and monitoring dashboards",
-      "version": "1.2.1",
+      "version": "1.2.2",
       "author": {
         "name": "Seth Hobson",
         "url": "https://github.com/carlopezzuto"
@@ -229,10 +229,11 @@
         "./agents/graphql-architect.md",
         "./agents/django-pro.md",
         "./agents/code-reviewer.md",
+		"./agents/event-sourcing-architect.md", 
         "./agents/fastapi-pro.md",
         "./agents/python-pro.md",
         "./agents/tdd-orchestrator.md",
-	      "./agents/test-automator.md",
+	    "./agents/test-automator.md",
         "./agents/ml-engineer.md",
         "./agents/ml-ops-engineer.md",
         "./agents/fastapi-pro.md",
@@ -399,7 +400,7 @@
       "name": "llm-application-dev",
       "source": "./plugins/llm-application-dev",
       "description": "LLM application development, prompt engineering, and AI assistant optimization",
-      "version": "1.2.1",
+      "version": "1.2.2",
       "author": {
         "name": "Seth Hobson",
         "url": "https://github.com/carlopezzuto"
@@ -432,7 +433,7 @@
       "name": "javascript-typescript",
       "source": "./plugins/javascript-typescript",
       "description": "JavaScript and TypeScript development with ES6+, Node.js, React, and modern web frameworks",
-      "version": "1.2.1",
+      "version": "1.2.2",
       "author": {
         "name": "Seth Hobson",
         "url": "https://github.com/carlopezzuto"
@@ -461,7 +462,7 @@
       "name": "shell-scripting",
       "source": "./plugins/shell-scripting",
       "description": "Production-grade Bash scripting with defensive programming, POSIX compliance, and comprehensive testing",
-      "version": "1.2.1",
+      "version": "1.2.2",
       "author": {
         "name": "Ryan Snodgrass",
         "url": "https://github.com/rsnodgrass"
@@ -488,7 +489,7 @@
       "name": "machine-learning-ops",
       "source": "./plugins/machine-learning-ops",
       "description": "ML model training pipelines, hyperparameter tuning, model deployment automation, experiment tracking, and MLOps workflows",
-      "version": "1.2.1",
+      "version": "1.2.2",
       "author": {
         "name": "Seth Hobson",
         "url": "https://github.com/carlopezzuto"
