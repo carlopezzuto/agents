@@ -1,10 +1,3 @@
-## 🔴 Critical Directives
-
-**IMPORTANT**: Before working with this project, read:
-
-- **`.claude/directives/memory-tagging.md`** - MANDATORY: Always tag memories with `mcp-memory-service` as first tag
-- **`.claude/directives/README.md`** - Additional topic-specific directives
-
 ## Overview
 
 MCP Memory Service is a Model Context Protocol server providing semantic memory and persistent storage for Claude Desktop with SQLite-vec, Cloudflare, and Hybrid storage backends.

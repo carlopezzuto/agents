@@ -1,4 +1,4 @@
-# Code Style and Conventions - Rankle
+# Code Style and Conventions
 
 ## General Principles
 
@@ -9,7 +9,7 @@
 - Security-first development, comprehensive testing, error handling, performance optimization
 - SOLID principles, clean architecture, dependency injection, separation of concerns
 - Respect clean architecture, DI, repository, ports/adapters
-- TDD approach, unit/integration/property-based testing, changed-lines coverage ≥90% and global coverage ≥85%, mutation testing for critical modules
+- TDD approach, unit/integration/property-based testing, mutation testing for critical modules
 - Validate and sanitize all inputs, secrets are always managed securely via environment variable or secret manager, development always aligns with OWASP best practices, database queries are always parameterized or ORM-based, secure coding practices, vulnerability prevention
 - Specific exceptions, structured logging, clear failure messages, graceful degradation
 - Profiling-based optimization, async for I/O, multiprocessing for CPU, efficient data structures, efficient algorithms, memory management, optimize hotspots
@@ -20,7 +20,7 @@
 
 - Variables: snake_case (ex:x, var, python_variable)
 - Functions: snake_case with descriptive verbs (ex:function, python_function)
-- Classes: camelCase (ex:Model, PythonClass)
+- Classes: PascalCase (ex:Model, PythonClass)
 - Constants: SCREAMING_SNAKE_CASE (ex:CONSTANT, PYTHON_CONSTANT, PYTHON_LONG_CONSTANT)
 - Method: snake_case (ex:class_method, method)
 - Module: snake_case (ex:module.py, python_module.py)
@@ -50,23 +50,6 @@
 - Provide meaningful error messages
 - Log errors for debugging
 - Comprehensive exception hierarchies in each service
-
-### Configuration Management
-
-Uses centralized ConfigManager with environment-specific settings:
-
-- Global, Service, Environment, Runtime, User scopes
-- Supports JSON, YAML, TOML formats
-- Dynamic configuration updates with validation
-
-### Integration Patterns
-
-Services communicate through:
-
-- Abstract interfaces and dependency injection
-- `EpicIntegrationOrchestrator` for cross-service coordination
-- Internal Python APIs (no HTTP dependencies)
-- Shared data models and DTOs
 
 ## Tools Configuration
 
