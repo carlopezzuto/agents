@@ -37,6 +37,8 @@ This project follows strict coding conventions defined in `.claude/rules/code-st
 - **Error handling**: Use specific exception types with meaningful messages
 - **Security**: No hardcoded secrets, validate all inputs, parameterized queries
 
+Not valid for agents/commands/skills
+
 ## Testing
 
 We follow Test-Driven Development (TDD) with an 80% minimum coverage target:
@@ -46,6 +48,8 @@ We follow Test-Driven Development (TDD) with an 80% minimum coverage target:
 3. Refactor while keeping tests green
 
 See `.claude/rules/testing-standard.md` for full details.
+
+Not valid for agents/commands/skills
 
 ## Commit Messages
 
