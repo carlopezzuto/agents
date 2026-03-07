@@ -1,6 +1,6 @@
 # Claude Code Agents
 
-A production-grade configuration system for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) featuring 42 specialized agents, 33 domain skills, 28 slash commands, and an intelligent hook system that enforces development best practices automatically.
+Claude Code configuration system for [Claude Code](https://docs.anthropic.com/en/docs/claude-code), featuring 42 specialized agents, 33 domain skills, 28 slash commands, and an intelligent hook system that enforces development best practices automatically.
 
 ## Features
 
