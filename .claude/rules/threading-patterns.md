@@ -1,21 +1,36 @@
-# Threading Patterns - Rankle Project
+# Threading and Concurrency Patterns
 
 ## Overview
 
-This document defines the standard threading patterns for the Rankle codebase. Following these patterns ensures consistent, safe, and maintainable concurrent code.
+Standard threading patterns for Python projects. Following these patterns ensures consistent, safe, and maintainable concurrent code.
 
-## Centralized Threading Package
+## ConditionalLock Pattern (RECOMMENDED)
 
-All threading utilities are located in `src/application/core/threading/`:
+A `ConditionalLock` wraps a real lock or a no-op, letting classes optionally support thread-safety without conditional checks at every call site.
+
+### Reference Implementation
 
 ```python
-from src.application.core.threading import ConditionalLock, LockManager, NamedLock
-from src.application.core.threading import ILockable, IThreadSafe  # Protocols
+import threading
+from contextlib import nullcontext
+
+class ConditionalLock:
+    """Lock that can be disabled for single-threaded use."""
+
+    def __init__(self, enabled: bool = True):
+        self._lock = threading.RLock() if enabled else nullcontext()
+        self._enabled = enabled
+
+    @property
+    def is_thread_safe(self) -> bool:
+        return self._enabled
+
+    def __enter__(self):
+        return self._lock.__enter__()
+
+    def __exit__(self, *args):
+        return self._lock.__exit__(*args)
 ```
-
-## ConditionalLock Pattern (REQUIRED)
-
-When implementing classes that optionally support thread-safety, use `ConditionalLock`:
 
 ### Before (Anti-Pattern - DO NOT USE)
 ```python
@@ -35,8 +50,6 @@ class MyService:
 
 ### After (Required Pattern - USE THIS)
 ```python
-from src.application.core.threading import ConditionalLock
-
 class MyService:
     def __init__(self, thread_safe: bool = True):
         # GOOD: Clean and consistent
@@ -56,7 +69,6 @@ class MyService:
 | `threading.RLock` | When recursive acquisition is needed and always enabled |
 | `threading.Lock` | Simple mutual exclusion (non-reentrant) |
 | `asyncio.Lock` | Async code (non-reentrant) |
-| `LockManager` | When tracking/debugging lock usage |
 
 ## Deadlock Prevention
 
@@ -99,14 +111,19 @@ def register_callback(self, callback):
 4. **Use context managers** - Always `with self._lock:` pattern
 5. **Document lock purpose** - Use AIDEV-NOTE for non-obvious locking
 
-## Thread-Safety Interface
+## Thread-Safety Protocol
 
-Classes supporting thread-safety should implement `IThreadSafe`:
+Classes supporting thread-safety should implement an `IThreadSafe` protocol:
 
 ```python
-from src.application.core.threading import IThreadSafe, ConditionalLock
+from typing import Protocol, runtime_checkable
 
-class MyService(IThreadSafe):
+@runtime_checkable
+class IThreadSafe(Protocol):
+    @property
+    def is_thread_safe(self) -> bool: ...
+
+class MyService:
     def __init__(self, thread_safe: bool = True):
         self._lock = ConditionalLock(thread_safe)
 
@@ -146,5 +163,4 @@ When updating existing code to use ConditionalLock:
 - [ ] Replace `threading.RLock() if X else None` with `ConditionalLock(X)`
 - [ ] Replace `with self._lock if self._lock else nullcontext():` with `with self._lock:`
 - [ ] Remove `from contextlib import nullcontext` if no longer needed
-- [ ] Add `from src.application.core.threading import ConditionalLock`
 - [ ] Verify tests pass with both thread-safe and non-thread-safe modes

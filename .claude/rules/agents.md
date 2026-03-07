@@ -61,9 +61,36 @@ ALWAYS spawn these agents automatically - no user prompt needed:
 | Security concerns          | backend-security-coder                   | IMMEDIATELY           |
 | Legacy/unfamiliar codebase | code-archaeologist                       | BEFORE changes        |
 
-## Parallel Task Execution (Mandatory)
+## Auto-Trigger Skill Rules (BLOCKING — activate matching skills before implementation)
 
-ALWAYS use parallel Task execution for independent operations:
+ALWAYS activate matching skills via the Skill tool — no user prompt needed:
+
+| Trigger                          | Skill                           | When                   |
+| -------------------------------- | ------------------------------- | ---------------------- |
+| Writing/modifying tests          | python-testing-pattern          | BEFORE writing tests   |
+| Async code or I/O-bound work     | async-python-patterns           | BEFORE writing code    |
+| Error handling implementation    | error-handling-patterns         | BEFORE writing code    |
+| Security-sensitive code          | security-review                 | BEFORE writing code    |
+| Debugging errors or failures     | debugging-strategies            | BEFORE investigating   |
+| Shell scripts or CI/CD pipelines | bash-defensive-patterns         | BEFORE writing scripts |
+| Auth/authorization work          | auth-implementation-patterns    | BEFORE implementing    |
+| API design or endpoints          | api-design-principles           | BEFORE designing       |
+| Architecture patterns/decisions  | architecture-patterns           | BEFORE deciding        |
+| Performance optimization         | python-performance-optimization | BEFORE optimizing      |
+| About to claim work is complete  | verification-before-completion  | BEFORE marking done    |
+
+## Skill + Agent Evaluation Protocol (MANDATORY)
+
+Before ANY implementation task, you MUST:
+1. **Evaluate** which skills AND agents apply to the task (state YES/NO for each)
+2. **Activate** all YES items FIRST — skills via Skill tool, agents via Task tool
+3. **Implement** only AFTER all activations complete
+
+Skipping evaluation, deferring activation to "later", or starting implementation before activation are all violations of this rule.
+
+## Parallel Task Execution (MANDATORY)
+
+ALWAYS use parallel Task execution for independent operations. Launch multiple agents in a single message when their work is independent. Sequential execution when parallel is possible is a violation of this rule.
 
 ```markdown
 # GOOD: Parallel execution

@@ -19,7 +19,7 @@ Add specially formatted comments throughout the codebase, where appropriate, for
 Example:
 
 ```python
-# AIDEV-NOTE: perf-hot-path; avoid extra allocations (see ADR-24)
+# AIDEV-NOTE: perf-hot-path; avoid extra allocations
 async def render_feed(...):
     ...
 ```
