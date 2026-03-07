@@ -217,6 +217,10 @@ Agents and skills activate automatically based on context:
 - **Security**: Input validation, parameterized queries, no hardcoded secrets
 - **Code Style**: PEP 8, type hints, max 88 char lines, max 600 line files
 
+## Contributing
+
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to get started.
+
 ## License
 
-See [LICENSE](LICENSE) for details.
+This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
