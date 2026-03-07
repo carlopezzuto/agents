@@ -1,0 +1,253 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "env": {
+    "BASH_MAX_OUTPUT_LENGTH": "50000",
+    "DISABLE_AUTOUPDATER": "0",
+    "CLAUDE_CODE_DISABLE_AUTO_MEMORY": "0"
+  },
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "permissions": {
+    "allow": [
+      "Bash",
+      "Read",
+      "Edit",
+      "Write",
+      "WebFetch",
+      "WebSearch",
+      "TodoWrite",
+      "Task",
+      "Skill",
+      "KillShell",
+      "mcp__context7__get-library-docs",
+      "mcp__sequential-thinking__sequentialthinking",
+      "mcp__context7__resolve-library-id",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_evaluate",
+      "mcp__ide__getDiagnostics",
+      "mcp__serena__activate_project",
+      "mcp__serena__check_onboarding_performed",
+      "mcp__serena__onboarding",
+      "mcp__serena__list_dir",
+      "mcp__serena__read_file",
+      "mcp__serena__write_memory",
+      "mcp__serena__search_for_pattern",
+      "mcp__serena__get_symbols_overview",
+      "mcp__serena__find_symbol",
+      "mcp__serena__think_about_collected_information",
+      "mcp__serena__list_memories",
+      "mcp__serena__read_memory",
+      "mcp__serena__replace_symbol_body",
+      "mcp__serena__insert_after_symbol",
+      "mcp__serena__replace_regex",
+      "mcp__serena__find_file",
+      "mcp__serena__think_about_whether_you_are_done",
+      "mcp__serena__delete_memory",
+      "mcp__serena__think_about_task_adherence",
+      "mcp__serena__initial_instructions",
+      "mcp__serena__summarize_changes",
+      "mcp__serena__get_current_config",
+      "mcp__mcp-server-time__get_current_time",
+      "mcp__morphllm-fast-apply__fast_apply",
+      "mcp__morphllm-fast-apply__analyze_edits",
+      "Read(//home/armisael/.claude/**)",
+      "Read(//home/armisael/**)",
+      "mcp__morphllm-fast-apply__edit_file",
+      "mcp__morphllm-fast-apply__list_directory",
+      "mcp__morphllm-fast-apply__read_file",
+      "mcp__morphllm-fast-apply__directory_tree",
+      "mcp__playwright__browser_snapshot",
+      "mcp__morphllm-fast-apply__read_multiple_files",
+      "mcp__morphllm-fast-apply__write_file",
+      "mcp__playwright__browser_navigate_back",
+      "mcp__serena__find_referencing_symbols",
+      "mcp__serena__insert_before_symbol",
+      "mcp__morphllm-fast-apply__get_file_info",
+      "mcp__morphllm-fast-apply__tiny_edit_file",
+      "mcp__morphllm-fast-apply__create_directory",
+      "mcp__morphllm-fast-apply__move_file",
+      "mcp__morphllm-fast-apply__search_files",
+      "mcp__code-context__index_codebase",
+      "mcp__memory-service__retrieve_memory",
+      "mcp__memory-service__recall_memory",
+      "mcp__memory-service__store_memory",
+      "mcp__memory-service__check_database_health"
+    ],
+    "deny": [
+      "Bash(echo:*)",
+      "Bash(printf:*)",
+      "Bash(sed:*)",
+      "Bash(awk:*)",
+      "Bash(perl:*)",
+    ],
+    "defaultMode": "default"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/hooks/session_start.py",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/core/session-start.js",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/hooks/pre_tool_use.py",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/hooks/post_tool_use.py",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/core/auto-capture-hook.js",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/hooks/pre_compact.py",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/hooks/notification.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/hooks/stop.py",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/hooks/subagent_stop.py",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/core/session-end.js",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/core/mid-conversation.js",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "*recall*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/core/memory-retrieval.js",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/skill-forced-eval-hook.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "disableAllHooks": false,
+  "statusLine": {
+    "type": "command",
+    "command": "input=$(cat); user=$(whoami); cwd=$(echo \"$input\" | jq -r '.workspace.current_dir' | sed \"s|$HOME|~|g\"); model=$(echo \"$input\" | jq -r '.model.display_name'); time=$(date +%H:%M); remaining=$(echo \"$input\" | jq -r '.context_window.remaining_percentage // empty'); transcript=$(echo \"$input\" | jq -r '.transcript_path'); todo_count=$([ -f \"$transcript\" ] && grep -c '\"type\":\"todo\"' \"$transcript\" 2>/dev/null || echo 0); cd \"$(echo \"$input\" | jq -r '.workspace.current_dir')\" 2>/dev/null; branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo ''); status=''; [ -n \"$branch\" ] && { [ -n \"$(git status --porcelain 2>/dev/null)\" ] && status='*'; }; B='\\033[38;2;30;102;245m'; G='\\033[38;2;64;160;43m'; Y='\\033[38;2;223;142;29m'; M='\\033[38;2;136;57;239m'; C='\\033[38;2;23;146;153m'; R='\\033[0m'; T='\\033[38;2;76;79;105m'; printf \"${C}${user}${R}:${B}${cwd}${R}\"; [ -n \"$branch\" ] && printf \" ${G}${branch}${Y}${status}${R}\"; [ -n \"$remaining\" ] && printf \" ${M}ctx:${remaining}%%${R}\"; printf \" ${T}${model}${R} ${Y}${time}${R}\"; [ \"$todo_count\" -gt 0 ] && printf \" ${C}todos:${todo_count}${R}\"; echo"
+  },
+  "enabledPlugins": {
+    "hugging-face-cli@huggingface-skills": true
+  },
+  "outputStyle": "Explanatory",
+  "alwaysThinkingEnabled": false,
+  "_comments": {
+    "colors": {
+      "B": "Blue - directory path",
+      "G": "Green - git branch",
+      "Y": "Yellow - dirty status, time",
+      "M": "Magenta - context remaining",
+      "C": "Cyan - username, todos",
+      "T": "Gray - model name"
+    }
+  }
+}
